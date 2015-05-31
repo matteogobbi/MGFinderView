@@ -53,12 +53,12 @@ static const CGFloat kMGRadiusToLineWidthFactor = 0.09;
     return self;
 }
 
-+ (instancetype)showAnimatedFinderViewForTargetView:(UIView *)targetView bounce:(BOOL)bounce
++ (instancetype)showAnimatedFinderViewForTargetView:(UIView *)targetView
 {
-    return [self showAnimatedFinderViewForTargetView:targetView color:kMGDefaultColor bounce:bounce];
+    return [self showAnimatedFinderViewForTargetView:targetView color:kMGDefaultColor];
 }
 
-+ (instancetype)showAnimatedFinderViewForTargetView:(UIView *)targetView color:(UIColor *)color bounce:(BOOL)bounce
++ (instancetype)showAnimatedFinderViewForTargetView:(UIView *)targetView color:(UIColor *)color
 {
     NSAssert(targetView, @"View must not be nil");
     

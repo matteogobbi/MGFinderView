@@ -16,8 +16,8 @@ IB_DESIGNABLE
 @property (nonatomic) IBInspectable CGFloat lineWidth;
 @property (nonatomic) IBInspectable CGFloat circleDuration;
 
-+ (instancetype)showAnimatedFinderViewForTargetView:(UIView *)targetView bounce:(BOOL)bounce;
-+ (instancetype)showAnimatedFinderViewForTargetView:(UIView *)targetView color:(UIColor *)color bounce:(BOOL)bounce;
++ (instancetype)showAnimatedFinderViewForTargetView:(UIView *)targetView;
++ (instancetype)showAnimatedFinderViewForTargetView:(UIView *)targetView color:(UIColor *)color;
 - (instancetype)initWithSquareSide:(CGFloat)side color:(UIColor *)color;
 - (void)startAnimating;
 

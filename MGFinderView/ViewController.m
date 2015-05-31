@@ -34,7 +34,7 @@
     
     // TargetView example
     _targetView.layer.cornerRadius = _targetView.frame.size.width/2.0;
-    MGFinderView *instance = [MGFinderView showAnimatedFinderViewForTargetView:_targetView color:[UIColor darkGrayColor] bounce:YES];
+    MGFinderView *instance = [MGFinderView showAnimatedFinderViewForTargetView:_targetView color:[UIColor darkGrayColor]];
     NSLog(@"%@", instance);
 }
 
