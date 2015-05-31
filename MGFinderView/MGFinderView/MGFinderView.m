@@ -69,7 +69,7 @@ static const CGFloat radiusToLineWidthFactor = 0.2;
     rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0];
     rotationAnimation.duration = _circleDuration;
     rotationAnimation.cumulative = NO;
-    rotationAnimation.repeatCount = 0;
+    rotationAnimation.repeatCount = INFINITY;
     
     [self.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
 }
