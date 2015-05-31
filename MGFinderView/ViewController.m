@@ -24,7 +24,6 @@
     
     //View by code
     MGFinderView *finderView = [[MGFinderView alloc] initWithSquareSide:150 color:[UIColor greenColor]];
-    finderView.backgroundColor = [UIColor clearColor];
     finderView.center = CGPointMake(150.0, 150.0);
     [self.view addSubview:finderView];
     [finderView startAnimating];

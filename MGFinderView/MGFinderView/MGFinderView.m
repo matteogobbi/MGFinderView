@@ -19,6 +19,16 @@ static const CGFloat radiusToLineWidthFactor = 0.09;
 
 #pragma mark - Lifecycle
 
+- (id)awakeAfterUsingCoder:(NSCoder *)aDecoder
+{
+    self.backgroundColor = [UIColor clearColor];
+}
+
+- (void)awakeFromNib
+{
+    self.backgroundColor = [UIColor clearColor];
+}
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     return [self initWithSquareSide:frame.size.width color:[UIColor blueColor]];
@@ -31,6 +41,7 @@ static const CGFloat radiusToLineWidthFactor = 0.09;
         _lineWidth = self.frame.size.width * radiusToLineWidthFactor;
         _color = [color copy];
         _circleDuration = 5.0;
+        self.backgroundColor = [UIColor clearColor];
     }
     return self;
 }
