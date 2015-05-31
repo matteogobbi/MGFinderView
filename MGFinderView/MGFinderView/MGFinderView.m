@@ -42,9 +42,9 @@ static const CGFloat radiusToLineWidthFactor = 0.2;
     CGMutablePathRef path2 = CGPathCreateMutable();
     CGMutablePathRef path3 = CGPathCreateMutable();
     
-    CGPathAddArc(path, NULL, self.center.x, self.center.y, side/2.0, 180.0*degreeToRadianFactor, 280.0*degreeToRadianFactor, 0);
-    CGPathAddArc(path2, NULL, self.center.x, self.center.y, side/2.0, 300.0*degreeToRadianFactor, 40.0*degreeToRadianFactor, 0);
-    CGPathAddArc(path3, NULL, self.center.x, self.center.y, side/2.0, 60.0*degreeToRadianFactor, 160.0*degreeToRadianFactor, 0);
+    CGPathAddArc(path, NULL, self.center.x, self.center.y, (side-_lineWidth)/2.0, 180.0*degreeToRadianFactor, 280.0*degreeToRadianFactor, 0);
+    CGPathAddArc(path2, NULL, self.center.x, self.center.y, (side-_lineWidth)/2.0, 300.0*degreeToRadianFactor, 40.0*degreeToRadianFactor, 0);
+    CGPathAddArc(path3, NULL, self.center.x, self.center.y, (side-_lineWidth)/2.0, 60.0*degreeToRadianFactor, 160.0*degreeToRadianFactor, 0);
     
     CGContextAddPath(context, path);
     CGContextAddPath(context, path2);
