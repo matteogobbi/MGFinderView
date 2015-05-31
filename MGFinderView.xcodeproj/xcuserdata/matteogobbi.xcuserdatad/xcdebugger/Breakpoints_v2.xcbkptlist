@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MGFinderView/MGFinderView/MGFinderView.m"
-            timestampString = "454729293.99956"
+            timestampString = "454800342.478271"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "-drawRect:"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,12 +26,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MGFinderView/MGFinderView/MGFinderView.m"
-            timestampString = "454729293.99956"
+            timestampString = "454800342.478271"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "-drawRect:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MGFinderView/MGFinderView/MGFinderView.m"
+            timestampString = "454800339.963213"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "+showAnimatedFinderViewForTargetView:color:bounce:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

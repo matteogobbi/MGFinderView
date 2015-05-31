@@ -12,6 +12,7 @@
 @interface ViewController ()
 
 @property (strong, nonatomic) IBOutlet MGFinderView *finderView;
+@property (weak, nonatomic) IBOutlet UIView *targetView;
 
 @end
 
@@ -22,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    //View by code
+    // View by code
     MGFinderView *finderView = [[MGFinderView alloc] initWithSquareSide:150 color:[UIColor greenColor]];
     finderView.center = CGPointMake(150.0, 150.0);
     [self.view addSubview:finderView];
@@ -30,6 +31,11 @@
     
     // View from IB
     [_finderView startAnimating];
+    
+    // TargetView example
+    _targetView.layer.cornerRadius = _targetView.frame.size.width/2.0;
+    MGFinderView *instance = [MGFinderView showAnimatedFinderViewForTargetView:_targetView color:[UIColor darkGrayColor] bounce:YES];
+    NSLog(@"%@", instance);
 }
 
 - (void)didReceiveMemoryWarning {
