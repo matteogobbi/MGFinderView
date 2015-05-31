@@ -3,7 +3,7 @@ MGFinderView
 
 `MGFinderView` is an animated finder view useful for instance to focus or to suggest a point of the screen to the user.
 
-<img src="Multimedia/image.png" alt="MGConferenceDatePicker Screenshot" width=400px />
+<img src="Multimedia/MGFinderViewImage.png" alt="MGConferenceDatePicker Screenshot" width=400px />
 
 ## Info
 
