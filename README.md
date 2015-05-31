@@ -5,6 +5,8 @@ MGFinderView
 
 <img src="Multimedia/MGFinderViewImage.png" alt="MGConferenceDatePicker Screenshot" width=400px />
 
+<img src="Multimedia/video.gif" alt="MGConferenceDatePicker Screenshot" width=400px />
+
 ## Info
 
 This code must be used under ARC. 
