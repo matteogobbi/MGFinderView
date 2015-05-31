@@ -6,10 +6,10 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT',
                      :file => 'LICENSE' }
   s.author       = { 'Matteo Gobbi' => 'job@matteogobbi.com' }
-  s.source       = { :git => 'https://github.com/matteogobbi/MGConferenceDatePicker.git',
+  s.source       = { :git => 'https://github.com/matteogobbi/MGFinderView.git',
                      :tag => '1.0' }
   s.platform     = :ios, '6.0'
-  s.source_files = 'Classes', 'MGConferenceDatePicker/MGFinderView/*'
+  s.source_files = 'Classes', 'MGFinderView/MGFinderView/*'
   s.frameworks   = 'CoreGraphics', 'UIKit'
   s.requires_arc = true
 end
