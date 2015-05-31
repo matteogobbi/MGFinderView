@@ -19,11 +19,6 @@ static const CGFloat radiusToLineWidthFactor = 0.09;
 
 #pragma mark - Lifecycle
 
-- (id)awakeAfterUsingCoder:(NSCoder *)aDecoder
-{
-    self.backgroundColor = [UIColor clearColor];
-}
-
 - (void)awakeFromNib
 {
     self.backgroundColor = [UIColor clearColor];
