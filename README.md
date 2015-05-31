@@ -5,7 +5,7 @@ MGFinderView
 
 <img src="Multimedia/MGFinderViewImage.png" alt="MGFinderView Screenshot" width=400px />
 
-<img src="Multimedia/video.gif" alt="MGFinderView gif" width=400px />
+<img src="Multimedia/MGFinderViewVideo.gif" alt="MGFinderView gif" width=400px />
 
 ## Info
 
