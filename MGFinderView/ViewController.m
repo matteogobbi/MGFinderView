@@ -22,9 +22,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-//    MGFinderView *finderView = [[MGFinderView alloc] initWithSquareSide:300 color:[UIColor greenColor]];
-//    [self.view addSubview:finderView];
+    //View by code
+    MGFinderView *finderView = [[MGFinderView alloc] initWithSquareSide:150 color:[UIColor greenColor]];
+    finderView.backgroundColor = [UIColor clearColor];
+    finderView.center = CGPointMake(150.0, 150.0);
+    [self.view addSubview:finderView];
+    [finderView startAnimating];
     
+    // View from IB
     [_finderView startAnimating];
 }
 

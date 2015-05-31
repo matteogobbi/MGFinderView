@@ -11,7 +11,7 @@
 static const CGFloat degreeToRadianFactor = 0.0174532925;
 
 // For automatic calcualation
-static const CGFloat radiusToLineWidthFactor = 0.2;
+static const CGFloat radiusToLineWidthFactor = 0.09;
 
 
 @implementation MGFinderView
