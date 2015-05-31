@@ -14,7 +14,9 @@ IB_DESIGNABLE
 
 @property (nonatomic) IBInspectable UIColor *color;
 @property (nonatomic) IBInspectable CGFloat lineWidth;
+@property (nonatomic) IBInspectable CGFloat circleDuration;
 
 - (instancetype)initWithSquareSide:(CGFloat)side color:(UIColor *)color;
+- (void)startAnimating;
 
 @end

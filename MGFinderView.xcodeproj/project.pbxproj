@@ -66,6 +66,7 @@
 		651CDF5D1B1A82B00088163E = {
 			isa = PBXGroup;
 			children = (
+				651CDF951B1A93F60088163E /* Frameworks */,
 				651CDF681B1A82B00088163E /* MGFinderView */,
 				651CDF821B1A82B00088163E /* MGFinderViewTests */,
 				651CDF671B1A82B00088163E /* Products */,
@@ -130,6 +131,14 @@
 				651CDF911B1A82DC0088163E /* MGFinderView.m */,
 			);
 			path = MGFinderView;
+			sourceTree = "<group>";
+		};
+		651CDF951B1A93F60088163E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			path = MGFinderView/Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,6 +435,7 @@
 				651CDF8B1B1A82B00088163E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		651CDF8C1B1A82B00088163E /* Build configuration list for PBXNativeTarget "MGFinderViewTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +444,7 @@
 				651CDF8E1B1A82B00088163E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,7 +11,10 @@
 
 @interface ViewController ()
 
+@property (strong, nonatomic) IBOutlet MGFinderView *finderView;
+
 @end
+
 
 @implementation ViewController
 
@@ -21,6 +24,8 @@
     
 //    MGFinderView *finderView = [[MGFinderView alloc] initWithSquareSide:300 color:[UIColor greenColor]];
 //    [self.view addSubview:finderView];
+    
+    [_finderView startAnimating];
 }
 
 - (void)didReceiveMemoryWarning {

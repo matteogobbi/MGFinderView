@@ -16,6 +16,9 @@ static const CGFloat radiusToLineWidthFactor = 0.2;
 
 @implementation MGFinderView
 
+
+#pragma mark - Lifecycle
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     return [self initWithSquareSide:frame.size.width color:[UIColor blueColor]];
@@ -26,6 +29,8 @@ static const CGFloat radiusToLineWidthFactor = 0.2;
     if (self = [super initWithFrame:CGRectMake(0, 0, side, side)]) {
         // Set an automatic line
         _lineWidth = self.frame.size.width * radiusToLineWidthFactor;
+        _color = [color copy];
+        _circleDuration = 5.0;
     }
     return self;
 }
@@ -42,9 +47,9 @@ static const CGFloat radiusToLineWidthFactor = 0.2;
     CGMutablePathRef path2 = CGPathCreateMutable();
     CGMutablePathRef path3 = CGPathCreateMutable();
     
-    CGPathAddArc(path, NULL, self.center.x, self.center.y, (side-_lineWidth)/2.0, 180.0*degreeToRadianFactor, 280.0*degreeToRadianFactor, 0);
-    CGPathAddArc(path2, NULL, self.center.x, self.center.y, (side-_lineWidth)/2.0, 300.0*degreeToRadianFactor, 40.0*degreeToRadianFactor, 0);
-    CGPathAddArc(path3, NULL, self.center.x, self.center.y, (side-_lineWidth)/2.0, 60.0*degreeToRadianFactor, 160.0*degreeToRadianFactor, 0);
+    CGPathAddArc(path, NULL, side/2.0, side/2.0, (side-_lineWidth)/2.0, 180.0*degreeToRadianFactor, 280.0*degreeToRadianFactor, 0);
+    CGPathAddArc(path2, NULL, side/2.0, side/2.0, (side-_lineWidth)/2.0, 300.0*degreeToRadianFactor, 40.0*degreeToRadianFactor, 0);
+    CGPathAddArc(path3, NULL, side/2.0, side/2.0, (side-_lineWidth)/2.0, 60.0*degreeToRadianFactor, 160.0*degreeToRadianFactor, 0);
     
     CGContextAddPath(context, path);
     CGContextAddPath(context, path2);
@@ -53,5 +58,22 @@ static const CGFloat radiusToLineWidthFactor = 0.2;
     CGContextSetLineWidth(context, _lineWidth);
     CGContextStrokePath(context);
 }
+
+
+#pragma mark - Public methods
+
+- (void)startAnimating
+{
+    CABasicAnimation* rotationAnimation;
+    rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0];
+    rotationAnimation.duration = _circleDuration;
+    rotationAnimation.cumulative = NO;
+    rotationAnimation.repeatCount = 0;
+    
+    [self.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
+}
+
+
 
 @end
