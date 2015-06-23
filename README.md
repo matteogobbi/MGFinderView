@@ -24,6 +24,21 @@ MGFinderView *finderView = [[MGFinderView alloc] initWithSquareSide:150 color:[U
 [finderView startAnimating];
 ```
 
+Do you want to do less? Use:
+
+```objc
++ (instancetype)showAnimatedFinderViewForTargetView:(UIView *)targetView;
++ (instancetype)showAnimatedFinderViewForTargetView:(UIView *)targetView color:(UIColor *)color;
+```
+
+size and position will be automatically calculated respecting the `targetView`.
+
+## Tips
+
+If you want the view behind the `finderView` still intercetting the user touch, remember to disable the user interaction on the `finderView`:
+
+`finderView.userInteractionEnabled = NO;`
+
 ## Contact
 
 Matteo Gobbi
