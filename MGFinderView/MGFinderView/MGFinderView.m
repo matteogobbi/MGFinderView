@@ -105,12 +105,15 @@ static const CGFloat kMGRadiusToLineWidthFactor = 0.09;
 
 - (void)startAnimating
 {
+    [self.layer removeAllAnimations];
+    
     CABasicAnimation* rotationAnimation;
     rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0];
     rotationAnimation.duration = _circleDuration;
     rotationAnimation.cumulative = NO;
     rotationAnimation.repeatCount = INFINITY;
+    rotationAnimation.removedOnCompletion = NO;
     
     [self.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
 }
