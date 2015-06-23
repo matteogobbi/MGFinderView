@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/matteogobbi/MGFinderView'
   s.license      = { :type => 'MIT',
                      :file => 'LICENSE' }
-  s.author       = { 'Matteo Gobbi' => 'job@matteogobbi.com' }
+  s.author       = { 'Matteo Gobbi' => 'job@matteogobbi.it' }
   s.source       = { :git => 'https://github.com/matteogobbi/MGFinderView.git',
                      :tag => '2.1' }
   s.platform     = :ios, '6.0'
