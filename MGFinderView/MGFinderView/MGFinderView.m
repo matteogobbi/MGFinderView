@@ -119,5 +119,17 @@ static const CGFloat kMGRadiusToLineWidthFactor = 0.09;
 }
 
 
+#pragma mark - Accessors
+
+- (void)setColor:(UIColor *)color
+{
+    if ([color isEqual:_color]) {
+        return;
+    }
+    
+    _color = color;
+    
+    [self setNeedsDisplay];
+}
 
 @end
